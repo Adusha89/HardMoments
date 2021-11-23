@@ -2,21 +2,21 @@
 
 std::ostream& operator<< (std::ostream& out, const Person& person)
 {
-    out << std::setw(10) << std::right << person.name
-         << "   " << std::setw(10) << std::right << person.surname 
-            << std::setw(10) << std::right << person.patronymic.value_or("");
+    out << std::setw(15) << std::right << person.surname
+         << "   " << std::setw(15) << std::right << person.name << "   "
+            << std::setw(15) << std::right << person.patronymic.value_or("");
     
     return out;
 }
 
-bool operator< (const Person& p1, const Person& p2)
+bool operator< (const Person& person1, const Person& person2)
 {
-    return std::tie(p1.name, p1.surname, p1.patronymic) 
-        < std::tie(p2.name, p2.surname, p2.patronymic);
+    return std::tie(person1.surname, person1.name, person1.patronymic) 
+        < std::tie(person2.surname, person2.name, person2.patronymic);
 }
 
-bool operator== (const Person& p1, const Person& p2)
+bool operator== (const Person& person1, const Person& person2)
 {
-    return std::tie(p1.name, p1.surname, p1.patronymic) 
-        == std::tie(p2.name, p2.surname, p2.patronymic);
+    return std::tie(person1.surname, person1.name, person1.patronymic) 
+        == std::tie(person2.surname, person2.name, person2.patronymic);
 }
