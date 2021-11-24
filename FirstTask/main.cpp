@@ -7,7 +7,12 @@
 
 int main(int argc, char const *argv[])
 {
-    std::ifstream file("/home/andrew/Рабочий стол/HardMoments/FirstTask/PhoneBook.txt");
+    std::ifstream file("PhoneBook.txt");
+    if (!file.is_open())
+    {
+        std::cout << "File don't open! Check the path" << std::endl;
+        return 0;
+    }
 
     PhoneBook book(file);
     std::cout << book;
@@ -25,17 +30,20 @@ int main(int argc, char const *argv[])
         std::cout << surname << "\t"; 
         auto answer = book.getPhoneNumber(surname); 
         if (answer.first.empty()) 
-            std::cout << answer.second; 
+            std::cout << answer.second << std::endl;
         else 
         {
-            std::cout << answer.first << "  "; 
-            std::cout << answer.second;
+            std::cout << answer.first << "  " << answer.second << std::endl;
         }
-        std::cout << std::endl; 
     };
 
     print_phone_number("Ivanov");
     print_phone_number("Petrov");
+
+    std::cout << "----ChangePhoneNumber----" << std::endl;
+    book.changePhoneNumber(Person{ "Kotov", "Vasilii", "Eliseevich" }, PhoneNumber{7, 123, "15344458", std::nullopt});
+    book.changePhoneNumber(Person{ "Mironova", "Margarita", "Vladimirovna" }, PhoneNumber{ 16, 465, "9155448", 13 });
+    std::cout << book << std::endl;
 
     return 0;
 }
