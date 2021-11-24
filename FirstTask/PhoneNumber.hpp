@@ -8,9 +8,9 @@
 
 struct PhoneNumber
 {
-    int countryCode;
-    int cityCode;
-    std::string number;
+    int countryCode = 0;
+    int cityCode = 0;
+    std::string number = "0";
     std::optional<int> addNumber = std::nullopt;
 };
 
