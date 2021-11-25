@@ -8,8 +8,8 @@
 
 struct Person
 {
-    std::string name;
     std::string surname;
+    std::string name;
     std::optional<std::string> patronymic = std::nullopt;
 
 };
