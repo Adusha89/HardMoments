@@ -74,6 +74,7 @@ CMakeFiles/Second.dir/WarAndPeace.cpp.o: ../WarAndPeace.cpp \
   /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2.h \
   /usr/include/c++/9/bits/char_traits.h \
   /usr/include/c++/9/cstdint \
   /usr/lib/gcc/x86_64-linux-gnu/9/include/stdint.h \
@@ -140,8 +141,11 @@ CMakeFiles/Second.dir/WarAndPeace.cpp.o: ../WarAndPeace.cpp \
   /usr/include/x86_64-linux-gnu/bits/select.h \
   /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
   /usr/include/c++/9/bits/std_abs.h \
   /usr/include/c++/9/cstdio \
   /usr/include/stdio.h \
@@ -151,6 +155,8 @@ CMakeFiles/Second.dir/WarAndPeace.cpp.o: ../WarAndPeace.cpp \
   /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
   /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
   /usr/include/c++/9/cerrno \
   /usr/include/errno.h \
   /usr/include/x86_64-linux-gnu/bits/errno.h \
@@ -226,6 +232,7 @@ CMakeFiles/Second.dir/main.cpp.o: ../main.cpp \
   /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar2.h \
   /usr/include/c++/9/exception \
   /usr/include/c++/9/bits/exception.h \
   /usr/include/c++/9/bits/exception_ptr.h \
@@ -324,8 +331,11 @@ CMakeFiles/Second.dir/main.cpp.o: ../main.cpp \
   /usr/include/x86_64-linux-gnu/bits/select.h \
   /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/alloca.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
   /usr/include/c++/9/bits/std_abs.h \
   /usr/include/c++/9/cstdio \
   /usr/include/stdio.h \
@@ -335,6 +345,8 @@ CMakeFiles/Second.dir/main.cpp.o: ../main.cpp \
   /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h \
   /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
   /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio.h \
+  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
   /usr/include/c++/9/cerrno \
   /usr/include/errno.h \
   /usr/include/x86_64-linux-gnu/bits/errno.h \
@@ -444,11 +456,17 @@ CMakeFiles/Second.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/c++/9/cerrno:
 
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdio.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
 
 /usr/include/stdio.h:
+
+/usr/include/x86_64-linux-gnu/bits/select2.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
 
@@ -487,6 +505,10 @@ CMakeFiles/Second.dir/main.cpp.o: ../main.cpp \
 /usr/include/c++/9/bits/basic_ios.tcc:
 
 /usr/include/c++/9/ios:
+
+/usr/include/x86_64-linux-gnu/bits/wchar2.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h:
 
 /usr/include/c++/9/bits/allocator.h:
 
@@ -552,6 +574,10 @@ CMakeFiles/Second.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
+/usr/include/c++/9/ext/string_conversions.h:
+
+../WarAndPeace.hpp:
+
 /usr/include/c++/9/ext/new_allocator.h:
 
 /usr/include/c++/9/bits/predefined_ops.h:
@@ -567,6 +593,8 @@ CMakeFiles/Second.dir/main.cpp.o: ../main.cpp \
 /usr/include/x86_64-linux-gnu/c++/9/bits/gthr.h:
 
 /usr/include/x86_64-linux-gnu/asm/errno.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
 
@@ -741,10 +769,6 @@ CMakeFiles/Second.dir/main.cpp.o: ../main.cpp \
 ../Timer.hpp:
 
 /usr/include/time.h:
-
-../WarAndPeace.hpp:
-
-/usr/include/c++/9/ext/string_conversions.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/timer_t.h:
 

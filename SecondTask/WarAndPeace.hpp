@@ -9,7 +9,7 @@ class WarAndPeace
 {
 private:
     std::vector<char> book;
-    std::vector<char> vowels{'a', 'e', 'i', 'o', 'u', 'y', 'A', 'E', 'I', 'O', 'U', 'Y'};
+    std::vector<char> vowels{'a', 'e', 'i', 'o', 'u', 'y'};
 
 public:
     WarAndPeace(std::ifstream&);

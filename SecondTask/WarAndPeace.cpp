@@ -5,7 +5,7 @@ WarAndPeace::WarAndPeace(std::ifstream& fin)
     char ch;
     while(fin >> ch)
     {
-        book.push_back(ch);
+        book.push_back(std::tolower(ch));
     }
 }
 
