@@ -20,6 +20,8 @@ int main(int argc, char const *argv[])
 
     std::cout << "Determinant: " << matrix.calcDet() << std::endl;
     
+    std::cout << std::endl << "----------------SECOND TASK-----------------" << std::endl;
 
+    //Третий пункт не успел сделать из-за командировки. Сегодня догружу.
     return 0;
 }
