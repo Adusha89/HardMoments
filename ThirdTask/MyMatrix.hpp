@@ -78,8 +78,6 @@ public:
         }
     }
 
-
-
     int calcDet()
     {
         int det = 0;

@@ -216,8 +216,26 @@ CMakeFiles/Third.dir/main.cpp.o: ../main.cpp \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
   /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
-  /usr/include/x86_64-linux-gnu/bits/iscanonical.h
+  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+  ../MyIterator.hpp \
+  /usr/include/c++/9/algorithm \
+  /usr/include/c++/9/bits/stl_algo.h \
+  /usr/include/c++/9/bits/algorithmfwd.h \
+  /usr/include/c++/9/bits/stl_heap.h \
+  /usr/include/c++/9/bits/stl_tempbuf.h \
+  /usr/include/c++/9/bits/uniform_int_dist.h \
+  /usr/include/c++/9/limits
 
+
+/usr/include/c++/9/bits/uniform_int_dist.h:
+
+/usr/include/c++/9/bits/stl_heap.h:
+
+/usr/include/c++/9/bits/algorithmfwd.h:
+
+/usr/include/c++/9/algorithm:
+
+../MyIterator.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/iscanonical.h:
 
@@ -324,6 +342,8 @@ CMakeFiles/Third.dir/main.cpp.o: ../main.cpp \
 /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h:
 
 /usr/include/c++/9/bits/predefined_ops.h:
+
+/usr/include/c++/9/bits/stl_algo.h:
 
 /usr/include/c++/9/type_traits:
 
@@ -447,6 +467,8 @@ CMakeFiles/Third.dir/main.cpp.o: ../main.cpp \
 
 /usr/include/x86_64-linux-gnu/c++/9/bits/gthr-default.h:
 
+/usr/include/c++/9/bits/stl_tempbuf.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
 
 /usr/include/features.h:
@@ -542,6 +564,8 @@ CMakeFiles/Third.dir/main.cpp.o: ../main.cpp \
 /usr/include/c++/9/cstdint:
 
 /usr/include/x86_64-linux-gnu/bits/time64.h:
+
+/usr/include/c++/9/limits:
 
 /usr/include/x86_64-linux-gnu/bits/types.h:
 

@@ -2,6 +2,8 @@
 #include <list>
 #include "AverageFromList.hpp"
 #include "MyMatrix.hpp"
+#include "MyIterator.hpp"
+#include <algorithm>
 
 int main(int argc, char const *argv[])
 {
@@ -20,8 +22,28 @@ int main(int argc, char const *argv[])
 
     std::cout << "Determinant: " << matrix.calcDet() << std::endl;
     
-    std::cout << std::endl << "----------------SECOND TASK-----------------" << std::endl;
+    std::cout << std::endl << "----------------THIRD TASK-----------------" << std::endl;
 
-    //Третий пункт не успел сделать из-за командировки. Сегодня догружу.
+    std::vector<int> myVec = {1,15,2,14,15,26};
+    MyIterator mi(myVec);
+
+    for (const auto& m : mi)
+    {
+        std::cout << m << " ";
+    }
+
+    std::sort(mi.begin(), mi.end());
+
+
+
+    std::cout << std::endl;
+    std::cout << mi[4];
+    std::cout << std::endl;
+
+    for (const auto& m : mi)
+    {
+        std::cout << m << " ";
+    }
+    std::cout << std::endl;
     return 0;
 }
