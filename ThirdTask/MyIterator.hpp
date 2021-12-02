@@ -20,7 +20,7 @@ public:
         return m_data.end();
     }
 
-    int operator[] (int n)
+    int operator[] (int n) const
     {
         return m_data[n];
     }

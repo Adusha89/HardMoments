@@ -12,7 +12,7 @@ class MyMatrix
 private:
     std::vector<std::vector<int>> m_matrix;
 
-    int calcDet(std::vector<std::vector<int>> matrix)
+    int calcDet(const std::vector<std::vector<int>>& matrix)
     {
         int det = 0;
         int sign = 1;
@@ -33,13 +33,14 @@ private:
 
     std::vector<std::vector<int>> createNewMatrix(const std::vector<std::vector<int>>& matrix, int strikeOut)
     {
-        std::vector<std::vector<int>> tempMatrix (matrix.size()-1, std::vector<int>(matrix.size()-1));
+        int newSize = matrix.size()-1;
+        std::vector<std::vector<int>> tempMatrix (newSize, std::vector<int>(newSize));
 
         int offCol = 0;
-        for (int row = 0; row < matrix.size()-1; ++row)
+        for (int row = 0; row < newSize; ++row)
         {
             offCol = 0;
-            for (int col = 0; col < matrix.size()-1; ++col)
+            for (int col = 0; col < newSize; ++col)
             {
                 if (col == strikeOut)
                 {
@@ -66,11 +67,11 @@ public:
 
     }
 
-    void printMatrix()
+    void printMatrix() const
     {
-        for (auto row : m_matrix)
+        for (const auto& row : m_matrix)
         {
-            for (auto col : row)
+            for (const auto& col : row)
             {
                 std::cout << std::setw(3) << col << " ";
             }

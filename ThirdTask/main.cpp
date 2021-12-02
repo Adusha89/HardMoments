@@ -34,11 +34,7 @@ int main(int argc, char const *argv[])
 
     std::sort(mi.begin(), mi.end());
 
-
-
-    std::cout << std::endl;
-    std::cout << mi[4];
-    std::cout << std::endl;
+    std::cout << std::endl << mi[4] << std::endl;
 
     for (const auto& m : mi)
     {
