@@ -22,7 +22,7 @@ private:
         if(matrix.size() == 2)
             return matrix[0][0] * matrix[1][1] - matrix[0][1] * matrix[1][0];
 
-        for (int col = 0; col < matrix.size(); ++col)
+        for (size_t col = 0; col < matrix.size(); ++col)
         {
             det += sign * matrix[0][col] * calcDet(createNewMatrix(matrix, col));
             sign = -1*sign;
@@ -37,10 +37,10 @@ private:
         std::vector<std::vector<int>> tempMatrix (newSize, std::vector<int>(newSize));
 
         int offCol = 0;
-        for (int row = 0; row < newSize; ++row)
+        for (size_t row = 0; row < newSize; ++row)
         {
             offCol = 0;
-            for (int col = 0; col < newSize; ++col)
+            for (size_t col = 0; col < newSize; ++col)
             {
                 if (col == strikeOut)
                 {
@@ -56,10 +56,10 @@ public:
     MyMatrix(int n) //Случайная матрица размерностью n
     {
         srand(time(0));
-        for (int row = 0; row < n; ++row)
+        for (size_t row = 0; row < n; ++row)
         {   
             m_matrix.push_back(std::vector<int>(n));
-            for (int col = 0; col < n; ++col)
+            for (size_t col = 0; col < n; ++col)
             {
                 m_matrix[row][col] = (rand()%5-2);
             }
@@ -89,7 +89,7 @@ public:
         if(m_matrix.size() == 2)
             return m_matrix[0][0] * m_matrix[1][1] - m_matrix[0][1] * m_matrix[1][0];
 
-        for (int col = 0; col < m_matrix.size(); ++col)
+        for (size_t col = 0; col < m_matrix.size(); ++col)
         {
             det += sign * m_matrix[0][col] * calcDet(createNewMatrix(m_matrix, col));
             sign = -1*sign;
