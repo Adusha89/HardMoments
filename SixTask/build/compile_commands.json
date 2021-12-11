@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/andrew/Рабочий стол/HardMoments/SixTask/build",
+  "command": "/bin/x86_64-linux-gnu-g++-9   -g -pthread -std=gnu++2a -o CMakeFiles/Six.dir/main.cpp.o -c \"/home/andrew/Рабочий стол/HardMoments/SixTask/main.cpp\"",
+  "file": "/home/andrew/Рабочий стол/HardMoments/SixTask/main.cpp"
+}
+]
