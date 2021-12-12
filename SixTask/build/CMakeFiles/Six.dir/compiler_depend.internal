@@ -225,4 +225,16 @@ CMakeFiles/Six.dir/main.cpp.o
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++io.h
  /usr/include/c++/9/bits/fstream.tcc
  /home/andrew/Рабочий стол/HardMoments/SixTask/ownerAndThief.hpp
+ /usr/include/c++/9/algorithm
+ /usr/include/c++/9/pstl/glue_algorithm_defs.h
+ /usr/include/c++/9/functional
+ /usr/include/c++/9/bits/std_function.h
+ /usr/include/c++/9/unordered_map
+ /usr/include/c++/9/bits/hashtable.h
+ /usr/include/c++/9/bits/hashtable_policy.h
+ /usr/include/c++/9/bits/node_handle.h
+ /usr/include/c++/9/optional
+ /usr/include/c++/9/bits/enable_special_members.h
+ /usr/include/c++/9/bits/unordered_map.h
+ /usr/include/c++/9/bits/erase_if.h
 

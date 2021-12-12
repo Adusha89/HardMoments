@@ -10,16 +10,17 @@ std::mutex m;
 
 class pCout
 {
+private:
+std::unique_lock<std::mutex> lock;
 
 public:
-    pCout()
+    pCout() : lock(std::unique_lock<std::mutex>(m))
     {
-        m.lock();
+        
     }
 
     ~pCout()
     {
-        m.unlock();
     }
 
     template<class T>

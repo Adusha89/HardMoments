@@ -6,23 +6,31 @@
 #include <chrono>
 #include <vector>
 #include <ctime>
+#include <algorithm>
 
+std::vector<int> things;
 
-void ownerAndThief ()
+void owner()
 {
-    srand(time(NULL));
-    std::vector<int> things;
-    std::thread owner([&]()
-    {
-            things.push_back(rand()%100+1);
-            for (const auto& t : things)
-            {
-                std::cout << t << " ";
-            }
-            std::this_thread::sleep_for(std::chrono::seconds(1));
-        
-    });
-    owner.join();
+    
+    things.push_back(rand()%100+1);
+    std::cout << "Owner add a: " << *(things.end()-1) << std::endl;
 }
 
+void thief()
+{
+    auto del = std::max_element(things.begin(), things.end());
+    std::cout << "Thief stole a: " << *del << std::endl;
+    things.erase(del);
+    
+}
+
+void addAndPop()
+{
+    srand(time(NULL));
+    std::thread o(owner);
+    std::thread t(thief);
+    o.join();
+    t.join();
+}
 #endif
