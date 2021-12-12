@@ -46,9 +46,9 @@ public:
     }
 };
 
-Things things;
 
-void owner()
+
+void owner(Things& things)
 {
     while(true)
     {
@@ -64,7 +64,7 @@ void owner()
     
 }
 
-void thief()
+void thief(Things& things)
 {
     while(true)
     {
@@ -80,9 +80,10 @@ void thief()
 
 void addAndPop()
 {
+    Things things;
     srand(time(NULL));
-    std::thread o(owner);
-    std::thread t(thief);
+    std::thread o(owner, std::ref(things));
+    std::thread t(thief, std::ref(things));
     o.join();
     t.join();
 }
