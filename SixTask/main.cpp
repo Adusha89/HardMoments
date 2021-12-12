@@ -13,7 +13,7 @@ int main(int argc, char const *argv[])
     addAndPop();
     std::thread th([]()
         {
-            std::cout << findPrime(100000) << std::endl;
+            std::cout << findPrime(10000) << std::endl;
         });
     th.join();
     return 0;

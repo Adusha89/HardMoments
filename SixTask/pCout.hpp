@@ -6,12 +6,14 @@
 #include <chrono>
 #include <fstream>
 #include <mutex>
-std::mutex m;
+
 
 class pCout
 {
 private:
+static std::mutex m;
 std::unique_lock<std::mutex> lock;
+
 
 public:
     pCout() : lock(std::unique_lock<std::mutex>(m))
@@ -35,6 +37,7 @@ public:
         return *this;
     }
 };
+std::mutex pCout::m{};
 
 void firstTask()
 {
