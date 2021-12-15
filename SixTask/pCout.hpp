@@ -18,11 +18,12 @@ std::unique_lock<std::mutex> lock;
 public:
     pCout() : lock(std::unique_lock<std::mutex>(m))
     {
-        
+        //m.lock();
     }
 
     ~pCout()
     {
+        //m.unlock();
     }
 
     template<class T>
@@ -44,29 +45,32 @@ void firstTask()
     std::vector<int> myVec = {1,2,3,4,5};
     std::thread th([=]()
         {
+            pCout out;
             for (auto& m : myVec)
             {
-                pCout() << m << " ";
+                out << m << " ";
             }
-            pCout() << std::endl;
+            out << std::endl;
         });
 
     std::thread th1([=]()
         {
+            pCout out;
             for (auto& m : myVec)
             {
-                pCout() << m << " ";
+                out << m << " ";
             }
-            pCout() << std::endl;
+            out << std::endl;
         });
 
     std::thread th2([=]()
         {
+            pCout out;
             for (auto& m : myVec)
             {
-                pCout() << m << " ";
+                out << m << " ";
             }
-            pCout() << std::endl;
+            out << std::endl;
         });
     
     th.join();
