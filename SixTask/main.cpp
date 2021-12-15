@@ -10,11 +10,11 @@
 int main(int argc, char const *argv[])
 {
     firstTask();
-    //addAndPop();
-    /* std::thread th([]()
+    addAndPop();
+    std::thread th([]()
         {
             std::cout << findPrime(10000) << std::endl;
         });
-    th.join(); */
+    th.join();
     return 0;
 }
